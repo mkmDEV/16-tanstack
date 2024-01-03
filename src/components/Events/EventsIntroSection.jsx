@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import meetupImg from '../../assets/meetup.jpg';
-
+import meetupImg from '@assets/meetup.jpg';
 export default function EventsIntroSection() {
   return (
     <section
