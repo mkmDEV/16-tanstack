@@ -2,6 +2,8 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 
 import { EditEvent, EventDetails, Events, NewEvent } from '@components/Events';
 
+import editEvent from '@loaders/editEvent.loader.js';
+
 export const router = createBrowserRouter([
   {
     path: '/',
@@ -25,6 +27,8 @@ export const router = createBrowserRouter([
       {
         path: '/events/:id/edit',
         element: <EditEvent />,
+        loader: editEvent.loader,
+        action: editEvent.action,
       },
     ],
   },
